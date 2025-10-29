@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Notas Rápidas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Notas Rápidas</h1>
+
+    <div class="container">
+        <input type="text" id="textoNota" placeholder="Digite sua nota...">
+
+        <div class="controls">
+            <label>
+                <input type="checkbox" id="urgenteCheck"> Urgente
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button id="addBtn" class="add-btn" onclick="adicionarNota()">Adicionar</button>
+            <button id="limparBtn" class="limpar-btn" onclick="limparTudo()">Apagar tudo</button>
+        </div>
+    </div>
+
+    <div class="listas">
+        <h2>Urgentes</h2>
+        <div class="list" id="urgente"></div>
+
+        <h2>Não Urgentes</h2>
+        <div class="list" id="naoUrgente"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
